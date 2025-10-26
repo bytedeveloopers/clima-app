@@ -8,7 +8,7 @@ import { SafeHome } from '../features/weather/ui/pages/SafeHome.tsx';
 
 export function AppRouter() {
   return (
-    <Router>
+    <Router basename="/clima-app">
       <ErrorBoundary>
         <Routes>
           <Route path="/" element={<SafeHome />} />
