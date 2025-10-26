@@ -1,0 +1,25 @@
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="512" height="512" rx="80" fill="#2563eb"/>
+  
+  <!-- Sun -->
+  <circle cx="256" cy="200" r="50" fill="#fbbf24"/>
+  
+  <!-- Sun rays -->
+  <g stroke="#fbbf24" stroke-width="8" stroke-linecap="round">
+    <line x1="256" y1="100" x2="256" y2="120"/>
+    <line x1="256" y1="280" x2="256" y2="300"/>
+    <line x1="356" y1="200" x2="336" y2="200"/>
+    <line x1="176" y1="200" x2="196" y2="200"/>
+    <line x1="327" y1="129" x2="313" y2="143"/>
+    <line x1="199" y1="257" x2="213" y2="243"/>
+    <line x1="327" y1="271" x2="313" y2="257"/>
+    <line x1="199" y1="143" x2="213" y2="157"/>
+  </g>
+  
+  <!-- Cloud -->
+  <path d="M180 300 Q160 280 180 260 Q200 240 240 260 Q280 240 320 260 Q340 280 320 300 Q340 320 320 340 L180 340 Q160 320 180 300 Z" fill="white"/>
+  
+  <!-- App Name -->
+  <text x="256" y="420" text-anchor="middle" font-family="Arial, sans-serif" font-size="48" font-weight="bold" fill="white">CLIMA</text>
+</svg>

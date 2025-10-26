@@ -1,0 +1,140 @@
+/* Estilos personalizados para mejoras visuales */
+
+/* Scrollbar personalizada */
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* Animaciones suaves */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.6s ease-out;
+}
+
+.animate-slide-in {
+  animation: slideIn 0.4s ease-out;
+}
+
+/* Efectos de hover mejorados */
+.hover-scale:hover {
+  transform: scale(1.02);
+}
+
+.hover-scale-small:hover {
+  transform: scale(1.05);
+}
+
+/* Gradientes personalizados */
+.bg-weather-gradient {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.bg-morning-gradient {
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+}
+
+.bg-day-gradient {
+  background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+}
+
+.bg-evening-gradient {
+  background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
+}
+
+.bg-night-gradient {
+  background: linear-gradient(135deg, #4c1d95 0%, #1e1b4b 100%);
+}
+
+/* Efectos de backdrop blur */
+.glass-effect {
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+/* Sombras personalizadas */
+.shadow-weather {
+  box-shadow: 0 10px 25px -5px rgba(59, 130, 246, 0.1), 0 10px 10px -5px rgba(59, 130, 246, 0.04);
+}
+
+.shadow-weather-lg {
+  box-shadow: 0 20px 25px -5px rgba(59, 130, 246, 0.15), 0 10px 10px -5px rgba(59, 130, 246, 0.1);
+}
+
+/* Transiciones suaves para temas */
+* {
+  transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+}
+
+/* Mejoras para elementos interactivos */
+.btn-weather {
+  @apply px-6 py-3 rounded-full font-semibold transition-all duration-300 shadow-lg hover:shadow-xl active:scale-95;
+}
+
+.btn-weather-primary {
+  @apply bg-gradient-to-r from-blue-500 to-indigo-600 text-white hover:from-blue-600 hover:to-indigo-700;
+}
+
+.btn-weather-secondary {
+  @apply bg-white/20 backdrop-blur-sm border border-white/30 text-slate-700 dark:text-white hover:bg-white/40;
+}
+
+/* Cards mejoradas */
+.weather-card {
+  @apply bg-white/60 dark:bg-slate-800/60 backdrop-blur-sm rounded-3xl shadow-xl border border-white/20;
+}
+
+.weather-card-hover {
+  @apply hover:shadow-2xl hover:scale-[1.02] transition-all duration-300;
+}
+
+/* Indicadores de loading mejorados */
+@keyframes pulse-slow {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+.animate-pulse-slow {
+  animation: pulse-slow 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+/* Responsive mejoras */
+@media (max-width: 640px) {
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  
+  .weather-card {
+    border-radius: 1.5rem;
+  }
+}

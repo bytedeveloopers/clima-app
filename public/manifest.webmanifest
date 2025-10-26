@@ -1,0 +1,118 @@
+{
+  "name": "Clima App - Pronóstico del Tiempo",
+  "short_name": "Clima App",
+  "description": "Aplicación completa del clima con pronósticos precisos, alertas meteorológicas y soporte multiidioma",
+  "theme_color": "#2563eb",
+  "background_color": "#1e40af",
+  "display": "standalone",
+  "orientation": "portrait",
+  "scope": "./",
+  "start_url": "./",
+  "icons": [
+    {
+      "src": "/icons/icon-72x72.png",
+      "sizes": "72x72",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "/icons/icon-96x96.png",
+      "sizes": "96x96",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "/icons/icon-128x128.png",
+      "sizes": "128x128",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "/icons/icon-144x144.png",
+      "sizes": "144x144",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "/icons/icon-152x152.png",
+      "sizes": "152x152",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "/icons/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "/icons/icon-384x384.png",
+      "sizes": "384x384",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "/icons/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable any"
+    }
+  ],
+  "categories": ["weather", "lifestyle", "utilities"],
+  "lang": "es",
+  "dir": "ltr",
+  "screenshots": [
+    {
+      "src": "/screenshots/desktop.png",
+      "sizes": "1280x720",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "Vista de escritorio de Clima App con pronóstico completo"
+    },
+    {
+      "src": "/screenshots/mobile.png",
+      "sizes": "375x812",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "Vista móvil de Clima App con clima actual"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Clima Actual",
+      "short_name": "Actual",
+      "description": "Ver el clima actual de tu ubicación",
+      "url": "/",
+      "icons": [
+        {
+          "src": "/icons/shortcut-current.png",
+          "sizes": "96x96"
+        }
+      ]
+    },
+    {
+      "name": "Pronóstico",
+      "short_name": "Pronóstico",
+      "description": "Ver el pronóstico de 7 días",
+      "url": "/forecast",
+      "icons": [
+        {
+          "src": "/icons/shortcut-forecast.png",
+          "sizes": "96x96"
+        }
+      ]
+    },
+    {
+      "name": "Configuración",
+      "short_name": "Config",
+      "description": "Cambiar unidades y configuración",
+      "url": "/settings",
+      "icons": [
+        {
+          "src": "/icons/shortcut-settings.png",
+          "sizes": "96x96"
+        }
+      ]
+    }
+  ]
+}
